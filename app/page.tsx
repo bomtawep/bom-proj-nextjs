@@ -1,10 +1,8 @@
-import type { Metadata } from "next";
-import { Counter } from "./components/counter/Counter";
-
+"use client";
+import * as React from "react";
+import HomePage from "@/app/home/page";
 export default function IndexPage() {
-  return <Counter />;
+  return (
+        <HomePage />
+  );
 }
-
-export const metadata: Metadata = {
-  title: "bom",
-};
